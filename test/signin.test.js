@@ -25,7 +25,6 @@ describe('Test the sign in endpoint', () => {
       })
       .set('Accept', 'application/json')
       .expect(400);
-    console.log(response.body);
     expect(response.body).toEqual({
       statusCode: 400,
       error: 'Bad Request',
